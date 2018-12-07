@@ -29,10 +29,16 @@ WORKDIR  /home
 
 RUN  mkdir -pv /home/templates/
 ADD test1.robot /home
- 
+
+ADD geckodriver /usr/bin 
 
 #ADD  /sbin/ifconfig /home
 #ENTRYPOINT ["/usr/bin/python", "app4.py"]
-ENTRYPOINT ["robot","/home/test1.robot"]
+
+
+#ENTRYPOINT ["robot","/home/test1.robot"]
+
+
+
 #ENTRYPOINT ["nohup", "robot","/home/test1", "&"]
 #Added comment to checkin the file.
