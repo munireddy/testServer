@@ -12,7 +12,7 @@ ${Password}  passw0rd
 *** test cases ***
 Test case one
     #Selenium2Library.Open Browser  http://www.google.com  firefox
-    Selenium2Library.Open Browser  http://ec2-18-224-149-11.us-east-2.compute.amazonaws.com:4000/  firefox
+    Selenium2Library.Open Browser  http://ec2-18-224-139-15.us-east-2.compute.amazonaws.com:4000/  firefox
     Input Text   username   python
 #    Focus   password  : Added additional comment
     Input Text   password   python	
