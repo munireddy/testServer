@@ -11,11 +11,14 @@ ${Password}  passw0rd
 
 *** test cases ***
 Test case one
-    Selenium2Library.Open Browser  http://ec2-3-16-55-247.us-east-2.compute.amazonaws.com:4000/  firefox
+    #Selenium2Library.Open Browser  http://www.google.com  firefox
+    Selenium2Library.Open Browser  http://ec2-18-224-149-11.us-east-2.compute.amazonaws.com:4000/  firefox
     Input Text   username   python
 #    Focus   password  : Added additional comment
     Input Text   password   python	
     Submit Form
+    log to console  EndOfTestCase 
+    Selenium2Library.Close Browser 
 write_variable_in_file
   ${datastring} =  Generate Random String  4  first
   ${Username} =  Generate Random String  1  aa
